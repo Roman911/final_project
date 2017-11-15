@@ -1,0 +1,79 @@
+.footer-page
+  position relative
+  min-height 100vh
+  background url('./../assets/image/mill.png'), $lightBrown
+  background-position center top 10px, center
+  background-repeat no-repeat
+  background-size auto 120px, auto
+  &__wrapper
+    min-height 100vh
+    background-color alpha($white, .8)
+    .content-item-left
+      border 1px solid red
+      height 80vh
+      .content-item
+        height 100%
+        display flex
+        flex-direction column
+        justify-content space-around
+        align-items center
+        &__block
+          text-align center
+        &__img_1,
+        &__img_2,
+        &__img_3
+          margin 0 auto
+          background-size cover
+          background-position center
+          width 100px
+          height 100px
+          border none
+          border-radius 50%
+        &__img_1
+          background-image url('./../assets/image/footer_menu_1.jpg')
+        &__img_2
+          background-image url('./../assets/image/footer_menu_2.jpg')
+        &__img_3
+          background-image url('./../assets/image/footer_menu_3.jpg')
+        &__head
+          > h3
+            font-family Alegreya-Bold
+            font-size 1.2rem
+            color $darkBrown
+        &__text
+          > p
+            font-family Proxima_Nova-Regular
+            font-size .7rem
+            letter-spacing .1rem
+            color $darkGray
+
+    .content-item-right
+      border 1px solid red
+      height 80vh
+      .content-item
+        &__head
+          margin 80px 0
+          width 370px
+          border 1px solid yellow
+          font-family Alegreya-Bold
+          > h2
+            font-size 2.5rem
+            color $darkGray
+          > p
+            font-size .8rem
+            text-align center
+            color $darkBrown
+            text-transform uppercase
+        &__img
+
+          > img
+            box-sizing border-box
+            max-width 100%
+            border 10px solid red
+
+
+
+
+    .nav
+      border 1px solid blue
+      height 20vh
