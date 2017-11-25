@@ -5,14 +5,19 @@
   <title>Bakery website</title>
 </head>
 <body>
-<div class="page-wraper">
+<div class="page-wrapper">
   <section class="page-header">
     <div class="nav-bar__bar">
       <div class="page-content nav-bar">
+        <div class="nav-bar__control btn">
+          <div class="nav-bar__control-bar"></div>
+          <div class="nav-bar__control-bar"></div>
+          <div class="nav-bar__control-bar"></div>
+        </div>
         <div class="nav-bar__logo">
           <a href="#">Gustoso</a>
         </div>
-        <div class="nav-bar__nav">
+        <div class="nav-bar__nav addClass showed">
           <ul>
             <li><a href="#">Welcome</a></li>
             <li>~</li>
@@ -26,9 +31,9 @@
           </ul>
         </div>
         <div class="nav-bar__icons">
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
         </div>
       </div>
     </div>
@@ -55,7 +60,7 @@
     <div class="first-page__background">
       <div class="page-content">
         <div class="grid-container">
-          <div class="content-block col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+          <div class="content-block col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
             <div class="content-item content-item-left">
               <div class="content-item__head">
                 <h2>Art of cakes</h2>
@@ -87,14 +92,14 @@
               </div>
             </div>
           </div>
-          <div class="content-block col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+          <div class="content-block col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
             <div class="content-item-right">
               <div class="content-item">
-                <div class="content-item__img content-block col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <div class="content-item__img content-block col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                   <img src="../assets/image/right_content_img_1.jpg" alt="">
                   <img src="../assets/image/right_content_img_2.jpg" alt="">
                 </div>
-                <div class="content-item__img content-block col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <div class="content-item__img content-block col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                   <img src="../assets/image/right_content_img_3.jpg" alt="">
                   <img src="../assets/image/right_content_img_4.jpg" alt="">
                 </div>
@@ -103,7 +108,6 @@
                   <h3>TASTES SO GOOD!</h3>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -114,7 +118,7 @@
     <div class="page-content second-page__wrapper">
       <div
         class="col-9 col-offset-1 col-sm-9 col-offset-sm-1 col-md-9 col-offset-md-1 col-lg-9 col-offset-lg-1 col-xl-9 col-offset-xl-1">
-        <div class="content-item">
+        <div class="content-item addClass showed">
           <div class="content-item-left">
             <div class="content-item-left__icons">
               <div class="fa fa-star"></div>
@@ -123,7 +127,6 @@
               <div class="fa fa-star"></div>
               <div class="fa fa-star-o"></div>
             </div>
-            <div class="content-item-left__fold"></div>
           </div>
           <div class="content-item-right">
             <div class="content-item-right__wrapper">
@@ -150,7 +153,7 @@
               </div>
             </div>
             <div class="content-item-center">
-              <div class="content-item-center__menu">
+              <div class="content-item-center__menu btn">
                 <div class="content-item-center__menu_line"></div>
                 <div class="content-item-center__menu_line"></div>
                 <div class="content-item-center__menu_line"></div>
@@ -172,7 +175,7 @@
     <div class="page-content">
       <div class="grid-container">
         <div
-          class="content-item-left col-5 col-offset-1 col-sm-5 col-offset-sm-1 col-md-5 col-offset-md-1 col-lg-5 col-offset-lg-1 col-xl-5 col-offset-xl-1">
+          class="content-item-left col-12 col-sm-12 col-md-12 col-lg-5 col-offset-lg-1 col-xl-5 col-offset-xl-1">
           <div class="content-item">
             <div class="content-item__head">
               <h2>Breakfast</h2>
@@ -195,9 +198,192 @@
             </div>
           </div>
         </div>
-        <div class="content-item-right col-6 col-sm-6 col-md-6 col-lg-5 col-xl-5">
+        <div class="content-item-right col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
           <div class="content-item">
-            <div class="content-item__window">
+            <div class="slider">
+              <div class="buttons">
+                <div class="buttons__controls" id="previous">&lt;</div>
+                <div class="buttons__controls" id="next">&gt;</div>
+              </div>
+              <div class="slider__slides">
+                <div class="slider__slides_slide showing">
+                  <div class="content-item__window">
+                    <div class="content-item__bg">
+                      <div class="content-item__border">
+                        <div class="content-item__block">
+                          <div class="content-item__header">
+                            <div class="content-item__header_text">
+                              <p>EST.</p>
+                              <p>1893</p>
+                            </div>
+                            <div class="content-item__header_img">
+                              <div class="content-item__header_l-circle"></div>
+                              <div class="content-item__header_line"></div>
+                              <div class="content-item__header_b-circle">
+                                <div class="content-item__header_img"></div>
+                              </div>
+                              <div class="content-item__header_line"></div>
+                              <div class="content-item__header_l-circle"></div>
+                            </div>
+                          </div>
+                          <div class="content-item__head">
+                            <h2>Your morning Escape with Flair 5</h2>
+                          </div>
+                          <div class="content-item__text">
+                            <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget
+                              eros faucibus tincidunt. Duis leo.</p>
+                          </div>
+                          <div class="content-item__button">READ</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__slides_slide">
+                  <div class="content-item__window">
+                    <div class="content-item__bg">
+                      <div class="content-item__border">
+                        <div class="content-item__block">
+                          <div class="content-item__header">
+                            <div class="content-item__header_text">
+                              <p>EST.</p>
+                              <p>1893</p>
+                            </div>
+                            <div class="content-item__header_img">
+                              <div class="content-item__header_l-circle"></div>
+                              <div class="content-item__header_line"></div>
+                              <div class="content-item__header_b-circle">
+                                <div class="content-item__header_img"></div>
+                              </div>
+                              <div class="content-item__header_line"></div>
+                              <div class="content-item__header_l-circle"></div>
+                            </div>
+                          </div>
+                          <div class="content-item__head">
+                            <h2>Your morning Escape with Flair 4</h2>
+                          </div>
+                          <div class="content-item__text">
+                            <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget
+                              eros faucibus tincidunt. Duis leo.</p>
+                          </div>
+                          <div class="content-item__button">READ</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__slides_slide">
+                  <div class="content-item__window">
+                    <div class="content-item__bg">
+                      <div class="content-item__border">
+                        <div class="content-item__block">
+                          <div class="content-item__header">
+                            <div class="content-item__header_text">
+                              <p>EST.</p>
+                              <p>1893</p>
+                            </div>
+                            <div class="content-item__header_img">
+                              <div class="content-item__header_l-circle"></div>
+                              <div class="content-item__header_line"></div>
+                              <div class="content-item__header_b-circle">
+                                <div class="content-item__header_img"></div>
+                              </div>
+                              <div class="content-item__header_line"></div>
+                              <div class="content-item__header_l-circle"></div>
+                            </div>
+                          </div>
+                          <div class="content-item__head">
+                            <h2>Your morning Escape with Flair 1</h2>
+                          </div>
+                          <div class="content-item__text">
+                            <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget
+                              eros faucibus tincidunt. Duis leo.</p>
+                          </div>
+                          <div class="content-item__button">READ</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__slides_slide">
+                  <div class="content-item__window">
+                    <div class="content-item__bg">
+                      <div class="content-item__border">
+                        <div class="content-item__block">
+                          <div class="content-item__header">
+                            <div class="content-item__header_text">
+                              <p>EST.</p>
+                              <p>1893</p>
+                            </div>
+                            <div class="content-item__header_img">
+                              <div class="content-item__header_l-circle"></div>
+                              <div class="content-item__header_line"></div>
+                              <div class="content-item__header_b-circle">
+                                <div class="content-item__header_img"></div>
+                              </div>
+                              <div class="content-item__header_line"></div>
+                              <div class="content-item__header_l-circle"></div>
+                            </div>
+                          </div>
+                          <div class="content-item__head">
+                            <h2>Your morning Escape with Flair 2</h2>
+                          </div>
+                          <div class="content-item__text">
+                            <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget
+                              eros faucibus tincidunt. Duis leo.</p>
+                          </div>
+                          <div class="content-item__button">READ</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__slides_slide">
+                  <div class="content-item__window">
+                    <div class="content-item__bg">
+                      <div class="content-item__border">
+                        <div class="content-item__block">
+                          <div class="content-item__header">
+                            <div class="content-item__header_text">
+                              <p>EST.</p>
+                              <p>1893</p>
+                            </div>
+                            <div class="content-item__header_img">
+                              <div class="content-item__header_l-circle"></div>
+                              <div class="content-item__header_line"></div>
+                              <div class="content-item__header_b-circle">
+                                <div class="content-item__header_img"></div>
+                              </div>
+                              <div class="content-item__header_line"></div>
+                              <div class="content-item__header_l-circle"></div>
+                            </div>
+                          </div>
+                          <div class="content-item__head">
+                            <h2>Your morning Escape with Flair 3</h2>
+                          </div>
+                          <div class="content-item__text">
+                            <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget
+                              eros faucibus tincidunt. Duis leo.</p>
+                          </div>
+                          <div class="content-item__button">READ</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="content-item__window content-item__window_2">
+              <div class=" content-item__bg">
+                <div class="content-item__border">
+                  <div class="content-item__block">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-item__window content-item__window_1">
               <div class="content-item__bg">
                 <div class="content-item__border">
                   <div class="content-item__block">
@@ -217,7 +403,7 @@
                       </div>
                     </div>
                     <div class="content-item__head">
-                      <h2>Your morning Escape with Flair</h2>
+                      <h2>Your morning Escape with Flair 3</h2>
                     </div>
                     <div class="content-item__text">
                       <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget
@@ -237,7 +423,7 @@
     <div class="fourth-page__wrapper">
       <div class="page-content">
         <div class="grid-container">
-          <div class="content-item-left col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+          <div class="content-item-left col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
             <div class="content-item">
               <div class="content-item__block">
                 <div class="content-item__img_1"></div>
@@ -269,7 +455,7 @@
             </div>
           </div>
           <div
-            class="content-item-right col-8 col-offset-1 col-sm-8 col-offset-sm-1 col-md-8 col-offset-md-1 col-lg-8 col-offset-lg-1 col-xl-8 col-offset-xl-1">
+            class="content-item-right col-10 col-offset-1 col-sm-10 col-offset-sm-1 col-md-10 col-offset-md-1 col-lg-8 col-offset-lg-1 col-xl-8 col-offset-xl-1">
             <div class="content-item">
               <div class="content-item__head">
                 <h2>The Jibarito sandwich</h2>
@@ -308,7 +494,7 @@
     <div class="footer-page__wrapper">
       <div class="page-content">
         <div class="grid-container">
-          <div class="content-item-left col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+          <div class="content-item-left col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
             <div class="content-item">
               <ul>
                 <li><a href="#">Welcome</a></li>
@@ -319,12 +505,12 @@
               </ul>
             </div>
           </div>
-          <div class="content-item-center col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+          <div class="content-item-center col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
             <div class="content-item">
               <a href="#">Gustoso</a>
             </div>
           </div>
-          <div class="content-item-right col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+          <div class="content-item-right col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
             <div class="content-item">
               <ul>
                 <li><a href="#">Welcome</a></li>

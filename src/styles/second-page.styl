@@ -15,23 +15,11 @@
     background-color $white
     box-shadow 10px 4px 15px 20px alpha($black, .2)
     &-left
-      position relative
-      width 44%
+      width 38%
       height 100%
-      border 1px solid red
       background-image url('./../assets/image/second_pages_img_1.jpg')
       background-position center
-      &:after
-        content ''
-        width 0
-        height 0
-        border-left 20px solid transparent
-        border-top: 20px solid transparent;
-        border-right: 20px solid #fff;
-        border-bottom: 20px solid #fff;
-        position: absolute;
-        bottom: 0;
-        right: 0;
+      transition width 1s
       &__icons
         height 100%
         display flex
@@ -41,24 +29,18 @@
         > .fa
           margin 4px 25px
           color $white
-      &__fold
-        position absolute
-        top 100%
-        transform translateY(-100%)
-        width 0
-        height 0
-        border-top 50px solid $white
-        border-left 50px solid transparent
     &-right
       box-sizing border-box
-      width 56%
+      width 62%
       display flex
       flex-direction column
       justify-content space-between
       background-image url('./../assets/image/mill.png')
       background-repeat no-repeat
       background-position right bottom
+      transition width 1s
       &__wrapper
+        box-sizing border-box
         height 100%
         padding 80px 50px 50px
         display flex
@@ -68,6 +50,9 @@
       &__head
         font-family Alegreya-Bold
         letter-spacing .2rem
+        opacity 1
+        transition opacity 1s
+        transition-delay .5s
         > h2
           font-size 2.5rem
           color $darkGray
@@ -76,6 +61,9 @@
           text-transform uppercase
           color $lightBrown
       &__text
+        opacity 1
+        transition opacity 1s
+        transition-delay .5s
         > p
           font-family Proxima_Nova-Regular
           font-size .9rem
@@ -88,6 +76,9 @@
         justify-content space-between
         align-items center
         width 100%
+        opacity 1
+        transition opacity 1s
+        transition-delay .5s
         &__button
           box-sizing border-box
           width 32px
@@ -129,15 +120,17 @@
     &-center
       position absolute
       top 50%
-      left 44%
+      left 38%
       transform translate(-50%, -50%)
       width 50px
       height 50px
       border-radius 50%
       background-color $white
       cursor pointer
+      transition left 1s
       &__menu
         position absolute
+        padding 15px
         width 9px
         display flex
         justify-content space-between
@@ -179,9 +172,37 @@
           color $lightBrown
         > h4
           color $lightGray
-    &.showed
-      border 1px solid red
-      background-color red
-      &-left
-        border 5px solid blue
 
+  .content-item.showed
+
+    .content-item-left
+      width 83%
+      transition width 1s
+      transition-delay .5s
+    .content-item-right
+      width 17%
+      transition width 1s
+      transition-delay .5s
+      background-position bottom, center
+      &__head
+        opacity 0
+        transition opacity 1s
+      &__text
+        opacity 0
+        transition opacity 1s
+      &-slider
+        opacity 0
+        transition opacity 1s
+    .content-item-center
+      left 83%
+      transition left 1s
+      transition-delay .5s
+
+.content-item-center__menu
+  &:hover
+    .content-item-center__menu_line
+      background-color $darkBrown
+
+@media screen and (max-width: $tablets)
+  .second-page
+    display none
